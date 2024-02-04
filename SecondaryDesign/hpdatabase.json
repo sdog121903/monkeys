@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "name":" LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "1.png",
+        "backimage":"11.png",
+        "store":"Kilroy"
+    },
+    {
+        "id": 2,
+        "name":" LD02 LOUNGE CHAIR",
+        "price": 250,
+        "image": "2.png",
+        "backimage":"22.png",
+        "store":"BZK"
+    },
+    {
+        "id": 3,
+        "name":" LD03 LOUNGE CHAIR",
+        "price": 290,
+        "image": "3.png",
+        "backimage":"33.png",
+        "store":"GoBack"
+    },
+    {
+        "id": 4,
+        "name":" LD04 LOUNGE CHAIR",
+        "price": 200,
+        "image": "4.png",
+        "backimage":"44.png",
+        "store":"TxemaSanz"
+    },
+    {
+        "id": 5,
+        "name":" LD05 LOUNGE CHAIR",
+        "price": 300,
+        "image": "5.png",
+        "backimage":"55.png",
+        "store":"Kilroy"
+    },
+    {
+        "id": 6,
+        "name":" LD06 LOUNGE CHAIR",
+        "price": 200,
+        "image": "6.png",
+        "backimage":"66.png",
+        "store":"PeioDuran"
+    },
+    {
+        "id": 7,
+        "name":" LD07 LOUNGE CHAIR",
+        "price": 200,
+        "image": "7.png",
+        "backimage":"77.png",
+        "store":"Jimi"
+    },
+    {
+        "id": 8,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "8.png",
+        "backimage":"88.png",
+        "store":"MonkeysTribe"
+    }
+
+]

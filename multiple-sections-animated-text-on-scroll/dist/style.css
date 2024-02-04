@@ -1,0 +1,89 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/1600x900/?city);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-a {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/1600x900/?nature);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-b {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/1600x900/?mountain);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-c {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/1600x900/?technology);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-inner {
+  text-align: center;
+  max-width: 600px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0 0 2rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.animate-normal {
+  -webkit-animation: animateIn 1000ms ease forwards;
+          animation: animateIn 1000ms ease forwards;
+}
+
+.animate-delay {
+  -webkit-animation: animateIn 1000ms ease 300ms forwards;
+          animation: animateIn 1000ms ease 300ms forwards;
+}
+
+@-webkit-keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

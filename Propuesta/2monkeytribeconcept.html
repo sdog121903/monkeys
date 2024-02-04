@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Monkey's Tribe</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style type="text/css">
+
+            body {
+
+                width:100vw;
+                height:100vh;
+                margin:0;
+                background-color: rgb(24, 38, 55);
+
+            }
+
+            * {
+                
+             
+            
+            }
+
+            .grid1 {
+
+                position:relative;
+                width:100%;
+                height:30vh;
+                overflow: hidden;
+
+            }
+
+            .logo {
+
+                position:relative;
+                width:100%;
+                height:50%;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+            }
+
+            .logo-box {
+
+                object-fit: cover;
+                position:absolute;
+                width:30%;
+                height:100%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+            }
+
+            .logo-box img {
+
+                height: 40vh;
+                width:40vh;
+
+            }
+
+            .navigation {
+
+                display:flex;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+                width: 100%;
+                top:0;
+                box-sizing: border-box;
+
+
+            }
+
+            .navigation ul {
+
+                display:flex;
+                justify-content: center;
+                align-content: center;
+                list-style: none;
+                min-width: 600px;
+                padding: 0 0 0 0;
+                margin: none;
+
+            }
+
+            .navigation ul li a {
+
+                font-size: 16px;
+                padding: 0 15px;
+                color: white;
+                transition: 0.2s;
+                text-transform: uppercase;
+                text-decoration: none;
+
+            }
+
+            .navigation ul li {
+
+                transition: 0.2s;
+
+            }
+
+            .navigation ul li:hover {
+
+                transition: 0.2s;
+                transform: scale(1.2);
+
+            }
+
+            .loginbox {
+
+                position:absolute;
+                display: flex;
+                flex-direction: row;
+                right:0;
+                top:0;
+
+
+            }
+
+            .login {
+
+                height:20vh;
+                width:23vh;
+                color:white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .icons {
+
+                display:flex;
+                flex-direction: row;
+                height:20vh;
+                width:15vh;
+                justify-content: center;
+                align-items: center;
+                color:white;
+
+            }
+
+            .icons i:nth-of-type(1) {
+
+                position:relative;
+                right:0;
+
+            }
+
+
+            .icons i:nth-of-type(1) {
+
+                position:relative;
+                left:0;
+
+            }
+
+            hero {
+
+                padding-top:4.5%;
+                position:relative;
+                width:100%;
+                height:77.5vh;
+                padding-bottom: 20px;
+                overflow: hidden;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 180px;
+
+            }
+
+            hero h1 {
+
+                font-size: 5vh;
+                color:white;
+
+            }
+
+
+            hero h1:nth-of-type(1) {
+
+                top:50%;
+                left:50%;
+                justify-content: center;
+                align-items: center;
+                font-size: 13vh;
+                color:rgb(166, 133, 65);
+                text-align: center;
+                height:70%;
+
+            }
+
+            hero h1:nth-of-type(2) {
+
+                margin-top: none;
+                font-family: 'Mea Culpa', cursive;  
+                height:4%;
+
+            }
+
+            hero h1:nth-of-type(3) {
+
+                font-family: 'Mea Culpa', cursive;  
+                height:4%;
+
+            }
+
+            hero h1:nth-of-type(1):hover {
+
+                color:lightblue;
+
+            }
+
+            #products {
+
+                width:100%;
+                height:auto;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+                margin-bottom: none;
+                padding-bottom: 35px;
+
+            }
+
+            .destacados-nav {
+
+                display:flex;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+                width: 100%;
+                top:0;
+                box-sizing: border-box;
+                margin-bottom: 30px;
+                background-color: black;
+
+            }
+
+            .destacados-nav ul {
+
+                display:flex;
+                justify-content: center;
+                align-content: center;
+                list-style: none;
+                min-width: 600px;
+                padding: 0 0 0 0;
+                margin: none;
+
+            }
+
+            .destacados-nav ul li a {
+
+                
+                font-size: 16px;
+                padding: 0 15px;
+                color: rgb(166, 133, 65);
+                text-transform: uppercase;
+                text-decoration: none;
+
+            }
+
+            .destacados-nav ul li {
+
+                display: inline-block;
+                transition: transform 0.3s ease;
+
+            }
+
+            .destacados-nav ul li:hover {
+
+                transition: 0.2s;
+                transform: translateY(5px);
+
+            }
+
+
+            .productgrid1 {
+
+                width:95%;
+                height:auto;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                flex-direction:row;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+
+            }
+
+            .title {
+
+                width:100%;
+                height:auto;
+                color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+
+            }
+
+            .pro-container {
+
+                position:relative;
+                width:300px;
+                height:400px;
+                color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transition: transform 0.3s ease-in-out;
+                overflow: auto;
+
+            }
+
+            .pro-container:hover {
+
+                transform: scale(1.05);
+                transition: transform 0.3s ease;
+
+            }
+
+            .pro {
+
+                width:100%;
+                height:auto;
+                overflow: hidden;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .pro-image {
+
+                display: flex;
+                height:auto;
+                width:100%;
+                justify-content: center;
+                align-items: center;
+                background-size: contain;
+
+            }
+
+            .hover-image {
+
+                display: none;
+
+            }
+
+            .seemore {
+
+                transition: 0.2s;
+                display: none;
+
+            }
+
+            .pro-container:hover img {
+
+                display: none;
+
+            }
+
+            .pro-container:hover .hover-image {
+
+                transition:1s;
+                display: flex;
+                height:auto;
+                width:100%;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .pro-container:hover .seemore {
+
+                display: flex;
+                height:45px;
+                width:100%;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .pro-name {
+
+                text-align: center;
+
+            }
+
+            .productgrid2 {
+
+                margin-top: 40px;
+                width:95%;
+                height:auto;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                flex-direction:row;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .braggingrights {
+
+                margin-top:50px;
+                margin-bottom: 0px;
+                width:100%;
+                height:auto;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .br1 {
+
+                width:100%;
+                height:10vh;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3vh;
+                background-image:url();
+                background-size: cover;
+                color:rgb(166, 133, 65);
+            }
+
+            .br2 {
+
+                width:100%;
+                height:10vh;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3vh;
+                background-image:url();
+                background-size: cover;
+                color:rgb(166, 133, 65);
+            }
+
+            .br3 {
+
+                width:100%;
+                height:10vh;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                text-align: center;                
+                justify-content: center;
+                align-items: center;
+                font-size: 3vh;
+                background-image:url();
+                background-size:cover;
+                color:rgb(166, 133, 65);
+            }
+
+            .br1 h1 {
+
+                text-align: center;
+
+            }
+
+            .br2 h1 {
+
+                text-align: center;
+
+            }
+
+            .br3 h1 {
+
+                text-align: center;
+
+            }
+
+            .hidden {
+
+                opacity: 0;
+                filter: blur(5px);
+                transform: translateX(-100%);
+                transition: all 1.5s;
+
+            }
+
+            .show {
+
+                opacity:1;
+                filter:blur(0);
+                transform:translateX(0);
+
+            }
+
+            @media(prefers-reduced-motion) {
+
+                .hidden {
+
+                    transition: none;
+
+                }
+
+            }
+
+            .upcoming-artists {
+
+                width:100%;
+                height:auto;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .header {
+
+                width:100%;
+                height:auto;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color:white;
+                transition: 0.2s;
+
+            }
+
+            .header:hover {
+
+                transition: 0.2s;
+                color:rgb(166, 133, 65);
+
+            }
+
+            .description {
+
+                width:100%;
+                height:auto;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                color:white;
+                transition: 0.2s;
+
+            }
+
+            .header:hover {
+
+                transition: 0.2s;
+                color:rgb(166, 133, 65);
+
+            }
+
+            .social-media {
+
+                height:auto;
+                display:flex;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+                width: 100%;
+                top:0;
+                box-sizing: border-box;
+
+            }
+
+
+
+            .social-media ul {
+
+                display:flex;
+                justify-content: center;
+                align-content: center;
+                list-style: none;
+                min-width: 600px;
+                padding: 0 0 0 0;
+                margin: none;
+
+            }
+
+            .social-media ul li a {
+
+                font-size: 40px;
+                padding: 0 15px;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: 0.2s;
+
+            }
+
+            .social-media ul li a:hover {
+
+                color:rgb(166, 133, 65);
+                transition: 0.2s;
+
+            }
+
+            .ourstores {
+
+                width:100%;
+                height:auto;
+                position:relative;
+                overflow: hidden;
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                padding-bottom:30px;
+                margin-bottom: 30px;
+
+            }
+
+            .ourstores-grid1 {
+
+                width:100%;
+                height:auto;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-bottom: 30px;
+
+            }
+
+            .ourstores-grid2 {
+
+                width:100%;
+                height:auto;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+
+            .drhoffman img {
+
+                border-radius: 80px;
+                transition:0.2s
+
+            }
+
+            .drhoffman img:hover {
+
+                transform: scale(1.2);
+                transition:0.2s
+
+            }
+
+            .kilroy img {
+
+                border-radius:80px;
+
+            }
+
+            .kilroy img:hover {
+
+                transform: scale(1.2);
+                transition:0.2s
+
+            }
+
+            .txemasanz {
+
+                transition:0.2s;
+
+            }
+
+            .txemasanz:hover {
+
+                transform: scale(1.2);
+                transition:0.2s
+
+            }
+
+            .peioduran img {
+
+                border-radius:80px;
+
+            }
+
+            .peioduran img:hover {
+
+                transform: scale(1.2);
+                transition:0.2s
+
+            }
+
+            .goback img {
+
+                border-radius:80px;
+
+            }
+
+            .goback img:hover {
+
+                transform: scale(1.2);
+                transition:0.2s
+
+            }
+
+            .monkeystribe img {
+
+                border-radius: 80px;
+
+            }
+
+            .monkeystribe img:hover {
+
+                transform: scale(1.2);
+                transition:0.2s
+
+            }
+
+            .ourstorestitle h1 {
+
+                color:white;
+                font-size: 60px;
+
+            }
+
+                
+        </style>
+
+    </head>
+
+    <body>
+
+        <section class="grid1">
+
+            <div class="logo">
+
+                <div class="logo-box">
+                
+                    <img src="logo.png" height="90" width="90">
+                
+                </div>
+
+            </div>
+
+            <nav class="navigation">
+
+                <ul>
+               
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tiendas</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+    
+                </ul>
+
+            </nav>
+
+            <div class="loginbox">
+
+                <div class="login">
+
+                    <h3><a>Entrar/Registrarse</a></h3>
+
+                </div>
+
+                <div class="icons">
+
+                    <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <hero>
+
+            <h1 class="hidden">MONKEYS TRIBE</h1>
+
+            <h1 class="hidden">Una Tienda De Artistas</h1>
+
+            <h1 class="hidden">Donde La Creatividad Busca Ser Protagonista</h1>
+
+        </hero>
+
+        <section id="products">
+
+            <div class="title">
+
+                <h2>Productos Destacados</h2>
+
+            </div>
+
+            <div class="destacados-nav">
+
+                <ul>
+               
+                    <li><a href="#">Mostrar Todo</a></li>
+                    <li><a href="#">Complementos</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Niño</a></li>
+    
+                </ul>
+
+            </div>
+
+            <div class="productgrid1">
+
+                <div class="pro-container">
+
+                    <div class="pro">
+
+                        <div class="pro-image1">
+
+                            <img src="product1a.png" height="300" width="300" class="original-image">
+                            <img src="product1abc.png" height="250" width="250" class="hover-image">
+
+                        </div>  
+                        
+                        <div class="seemore">
+
+                            <h3>SELECCIONAR OPCIONES</h3>
+
+                        </div>
+
+                        <div class="pro-name">
+
+                            <span>Sudadera "XI" Go Back Unisex</span>
+                            <h4>&#8364;68.90</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="pro-container">
+
+                    <div class="pro">
+
+                        <div class="pro-image">
+
+                            <img src="product2a.png" height="300" width="300" class="original-image">
+                            <img src="product2abc.png" height="250" width="250" class="hover-image">
+
+                        </div>   
+
+                        <div class="seemore">
+
+                            <h3>SELECCIONAR OPCIONES</h3>
+
+                        </div>
+
+                        <div class="pro-name">
+
+                            <span>Sudadera "Save Circle" Go Back Unisex</span>
+                            <h4>&#8364;78.90</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="pro-container">
+
+                    <div class="pro">
+
+                        <div class="pro-image">
+
+                            <img src="product3a.png" height="300" width="300" class="original-image">
+                            <img src="product3abc.png" height="250" width="250" class="hover-image">
+
+                        </div> 
+
+                        <div class="seemore">
+
+                            <h3>SELECCIONAR OPCIONES</h3>
+
+                        </div>
+
+                        <div class="pro-name">
+
+                            <span>Sudadera "Save Sun" Go Back Unisex</span>
+                            <h4>&#8364;9.70</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="pro-container">
+
+                    <div class="pro">
+
+                        <div class="pro-image">
+                            
+                            <img src="product4a.png" height="300" width="300" class="original-image">
+                            <img src="product4abc.png" height="250" width="250" class="hover-image">
+
+                        </div> 
+
+                        <div class="seemore">
+
+                            <h3>SELECCIONAR OPCIONES</h3>
+
+                        </div>
+
+                        <div class="pro-name">
+
+                            <span>Gorra Vintage "Melting" Go Back</span>
+                            <h4>&#8364;9.70</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="productgrid2">
+
+                <div class="pro-container">
+
+                    <div class="pro">
+
+                        <div class="pro-image">
+                            
+                            <img src="product5a.png" height="300" width="300" class="original-image">
+                            <img src="product5a.png" height="250" width="250" class="hover-image">
+
+                        </div>
+
+                        <div class="seemore">
+
+                            <h3>SELECCIONAR OPCIONES</h3>
+
+                        </div>
+
+                        <div class="pro-name">
+
+                            <span>Gorra Vintage "Save the world"</span>
+                            <h4>&#8364;9.70</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="pro-container">
+
+                    <div class="pro">
+
+                        <div class="pro-image">
+                            
+                            <img src="product6a.png" height="300" width="300" class="original-image">
+                            <img src="product6abc.png" height="250" width="250" class="hover-image">
+                            
+                        </div>
+
+                        <div class="seemore">
+
+                            <h3>SELECCIONAR OPCIONES</h3>
+
+                        </div>
+
+                        <div class="pro-name">
+
+                            <span>Gorra Vintage "Go Back"</span>
+                            <h4>&#8364;11.50</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="pro-container">
+
+                    <div class="pro">
+
+                        <div class="pro-image">
+                            
+                            <img src="product7a.png" height="300" width="300" class="original-image">
+                            <img src="product7abc.png" height="250" width="250" class="hover-image">
+                            
+                        </div>
+
+                        <div class="seemore">
+
+                            <h3>SELECCIONAR OPCIONES</h3>
+
+                        </div>
+
+                        <div class="pro-name">
+
+                            <span>Sudadera "Melting" Go Back Unisex</span>
+                            <h4>&#8364;78.90</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="pro-container">
+
+                    <div class="pro">
+
+                        <div class="pro-image">
+                            
+                            <img src="product8a.png" height="300" width="300" class="original-image">
+                            <img src="product8abc.png" height="250" width="250" class="hover-image">
+                            
+                        </div>
+
+                        <div class="seemore">
+
+                            <h3>SELECCIONAR OPCIONES</h3>
+
+                        </div>
+
+                        <div class="pro-name">
+
+                            <span>Vestido "Dance" Go Back</span>
+                            <h4>&#8364;42.00</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="braggingrights">
+
+            <div class="br1">
+
+                <h1>Impresion Ecologica</h1>
+
+            </div>
+            
+
+            <div class="br2">
+
+                <h1>Producción Bajo Pedido, De Manera Individual</h1>
+
+            </div>
+
+
+            <div class="br3">
+
+                <h1>Comercio Justo</h1>
+
+            </div>
+
+        </section>
+
+        <section class="ourstores">
+
+            <div class="ourstorestitle">
+
+                <h1>Tiendas de Artistas</h1>
+
+            </div>
+
+            <div class="ourstores-grid1">
+
+                <div class="drhoffman">
+
+                    <img src="drhoffman.jpeg">
+
+                </div>
+
+                <div class="kilroy">
+
+                    <img src="kilroylogo.png" height="150" width="150">
+
+                </div>
+
+                <div class="peioduran">
+
+                    <img src="peioduran.jpeg">
+
+                </div>
+
+            </div>
+
+            <div class="ourstores-grid2">
+
+                <div class="goback">
+
+                    <img src="gobacklogo.png" height="150" width="150">
+
+                </div>
+
+                <div class="txemasanz">
+
+                    <img src="txemasanz.png">
+
+                </div>
+
+                <div class="monkeystribe">
+
+                    <img src="monkeystribestore.jpeg">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="upcoming-artists">
+
+            <div class="header">
+
+                <h1>PRÓXIMOS ARTISTAS</h1>
+
+                <h2>No nos pierdas de vista</h2>
+
+            </div>
+
+            <div class="description">
+
+                <h4>Monkeystribe ha nacido con la inteción de quedarse. Pronto podrás conocer a más artistas de nuestra tribu que presentarán sus colecciones.</h4>
+
+            </div>
+
+            <div class="social-media">
+
+                <ul>
+               
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+    
+                </ul>
+
+            </div>
+
+        </section>
+
+            <script type="text/javascript">
+
+                const observer = new IntersectionObserver((entries) => {
+
+                    entries.forEach((entry) => {
+
+                        console.log(entry)
+
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('show');
+                        } else {
+                            entry.target.classList.remove('show');
+                        }
+
+                    });
+
+                });
+
+                const hiddenElements = document.querySelectorAll('.hidden')
+                hiddenElements.forEach((el) => observer.observe(el));
+
+            </script>
+
+    </body>
+
+</html>

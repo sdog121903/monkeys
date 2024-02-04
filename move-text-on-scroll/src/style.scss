@@ -1,0 +1,59 @@
+:root{
+  --black: #000000;
+  --white: #FFFFFF;
+  --yellow: #FFF56D;
+  --geyser: #D7E4E3;
+}
+
+/* general */
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--black);
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+}
+
+.spacer{
+  height: 100vh;
+  font-size: 60px;
+}
+
+/* helpers */
+
+.flex-align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* xlHeaders */
+
+.xlHeader{
+  padding: 67px 0;
+  overflow: hidden;
+
+  &__header{
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  &--right{
+    padding: 150px 0;
+    position: relative;
+
+    .xlHeader__header{
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      transform: translate(0px, -50%);
+    }
+
+  }
+
+
+}
+

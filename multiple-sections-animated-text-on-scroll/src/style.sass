@@ -1,0 +1,74 @@
+// common hero section properties
+.hero
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+#hero
+  background: linear-gradient(rgba(black, 0.5),rgba(black, 0.5)), url(https://source.unsplash.com/1600x900/?city)
+    size: cover
+    position: center
+    repeat: no-repeat
+  
+.section-a
+  background: linear-gradient(rgba(black, 0.5),rgba(black, 0.5)), url(https://source.unsplash.com/1600x900/?nature)
+    size: cover
+    position: center
+    repeat: no-repeat
+  
+.section-b
+  background: linear-gradient(rgba(black, 0.5),rgba(black, 0.5)), url(https://source.unsplash.com/1600x900/?mountain)
+    size: cover
+    position: center
+    repeat: no-repeat
+  
+.section-c
+  background: linear-gradient(rgba(black, 0.5),rgba(black, 0.5)), url(https://source.unsplash.com/1600x900/?technology)
+    size: cover
+    position: center
+    repeat: no-repeat
+  
+  
+  
+.hero-inner
+  text-align: center
+  max-width: 600px
+
+h1,
+h2
+  margin: 0
+  color: white
+  opacity: 0
+  // starting position of the text is 40px
+  // this is how far it will move up on load
+  transform: translateY(40px)
+  
+h1
+  font-size: 3rem
+  margin: 0 0 2rem
+  
+h2
+  font-weight: 400
+  font-size: 2rem
+  
+.animate-normal
+  // call the keyframe animation
+  animation: animateIn 1000ms ease forwards
+  
+.animate-delay
+  // 300ms delay on the bottom headline
+  animation: animateIn 1000ms ease 300ms forwards
+  
+  
+// what you're animating
+
+@keyframes animateIn
+  0%
+    opacity: 0
+    transform: translateY(40px)
+  100%
+    // fade in
+    opacity: 1
+    // move up 40px
+    transform: translateY(0)

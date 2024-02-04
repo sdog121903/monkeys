@@ -1,0 +1,614 @@
+body {
+
+    font: 1em/1.618 'Bebas Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 10px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+
+}
+  
+.carditems {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    width:1300px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+
+}
+
+.logo {
+
+    height:100%;
+    width:10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.phrase {
+
+    height:100%;
+    width:55%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.phrase a:hover {
+
+    cursor:pointer;
+    color:#593c22;
+
+}
+
+.nav {
+
+    height:100%;
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.nav a h3 {
+
+    font-size: 1.7vw;
+
+}
+
+.nav a:hover {
+
+    cursor:pointer;
+    color:#593c22;
+
+}
+
+.hero {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; 
+    width: 100%; 
+    height: 100%;
+    margin-top: 20px;
+
+
+}
+
+.herologo {
+
+    position: absolute;
+    top: 103%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width:100%;
+    max-height:100%;
+    pointer-events: none;
+
+}
+
+.herolink1 {
+
+    cursor: pointer;
+    position: relative;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herolink1 video {
+
+    height:100%;
+    width:100%;
+    position: relative;
+
+}
+
+.image-overlay {
+
+    position: absolute;
+    top:3px;
+    left:0;
+    width:100%;
+    height:98.4%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+
+}
+
+.image-overlay:hover {
+
+    transition: 0.5s;
+    opacity:1;
+
+}
+
+.herolink2 {
+
+    cursor: pointer;
+    position: relative;
+    background-size: cover;
+
+}
+
+.herolink2 video {
+
+    height:100%;
+    width:100%;
+    position: relative;
+
+}
+
+.herolink3 {
+
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.herolink3 video {
+
+    height:100%;
+    width:100%;
+    position: relative;
+
+}
+
+
+.herolink4 {
+
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.herolink4 video {
+
+    height:100%;
+    width:100%;
+    position: relative;
+
+}
+
+
+.herolink5 {
+
+    cursor: pointer;
+    position: relative;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    position: relative;
+
+}
+
+.herolink5 img {
+
+    height:100%;
+    width:100%;
+
+}
+
+.herolink6 {
+
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.herolink6 video {
+
+    height:100%;
+    width:100%;
+
+}
+
+.herolink7 {
+
+    position: relative;
+    cursor: pointer;
+    background-size: cover;
+
+}
+
+.herolink7 video {
+
+    height:100%;
+    width:100%;
+    position: relative;
+
+}
+
+.herolink8 {
+
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.herolink8 video {
+
+    height:100%;
+    width:100%;
+
+}
+
+.herolink9 {
+
+    cursor: pointer;
+    position: relative;
+    background-size: cover;
+
+}
+
+.herolink9 video {
+
+    height:100%;
+    width:100%;
+
+}
+
+
+.starproducts {
+
+    width:100%;
+    height:auto;
+    overflow:hidden;
+
+}
+
+:root {
+
+    --black1: #0d0d0d;
+    --beige1:#f2f2f2;
+    --monkey:#593c22;
+    --lightgrey: #f2f2f2;
+
+
+}
+
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.container {
+
+    margin-left:auto ;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 0 2px;
+
+}
+
+.titleproducts {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 {
+
+    margin-top: 25px;
+    font-size: 32px;
+    margin-bottom: 5px;
+
+}
+
+.cards {
+
+    display: flex;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 5px;
+    background: #F2F2F2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: all 0.2s;
+    min-height:320px;
+    min-width:320px;
+    cursor:pointer;
+
+}
+
+.card:not(:last-child) {
+
+    margin-right: 10px;
+
+}
+
+.card:hover {
+
+    color: var(--beige1);
+
+}
+
+.card:hover:nth-of-type(1) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(2) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(3) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(4) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(5) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(6) {
+
+    background: #F2F2F2;
+
+}
+
+.card:hover:nth-of-type(7) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(8) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(9) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(10) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(11) {
+
+    background:#F2F2F2;
+
+}
+
+.card:hover:nth-of-type(12) {
+
+    background:#F2F2F2;
+
+}
+
+.card .card-title {
+
+    font-size: 20px;
+    color: #0d0d0d;
+
+}
+
+.card {
+
+    margin: 20px 0;
+    max-width: 85%;
+
+}
+
+.card-content {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card .card-link-wrapper {
+
+    margin-top: auto;
+
+}
+
+.card .card-link {
+
+    display: inline-block;
+    text-decoration: none;
+    color: #f2f2f2;
+    background: var(--black1);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+
+}
+
+.card:hover .card-link {
+
+    background: var(--beige1);
+    color: var(--monkey);
+
+}
+
+.cards::-webkit-scrollbar {
+
+    height: 95px;
+    width:100px;
+    cursor: grab;
+
+
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+
+ 
+    background: url('scrollbarmonkey.png') no-repeat;
+    background-size:200px 200px;  
+    background-position-x: center;
+    background-position-y: center;
+
+
+}
+
+.cards::-webkit-scrollbar-track {
+    background: var(--beige1);
+}
+
+.card-link-wrapper {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hover-image {
+
+    display: none;
+
+}
+
+.card:hover .original-image {
+
+    display: none;
+
+}
+
+.card:hover .hover-image {
+
+    display: flex;
+
+}
+
+  
+  @media (min-width: 500px) {
+    .card {
+      flex-basis: calc(50% - 10px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .card {
+      flex-basis: calc(calc(100% / 3) - 20px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .card {
+      flex-basis: calc(25% - 30px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+footer {
+
+    height: auto;
+    width: 100%;
+
+}
+
+.barrier {
+
+    height:100px;
+    width:100%;
+    background-color: #593c22;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+}
+
+.barrier h3 a {
+
+    cursor:pointer;
+
+}
+  
+.text-slide {
+
+    position: absolute;
+
+}
+
+
+  
+  
+  
+  
+  
+

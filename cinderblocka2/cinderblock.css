@@ -1,0 +1,411 @@
+body {
+
+    background-color: #28282B;
+    height:100%;
+    padding-top: 7px;
+    box-sizing: border-box;
+
+}
+
+
+.navigation {
+
+    width:100%;
+    height: 150px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.carditems {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    width:80%;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    font: 1em/1.618 'Bebas Neue', sans-serif;
+
+}
+
+.logo {
+
+    position: relative;
+    height:150px;
+    width:95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.phrase {
+
+    height:100%;
+    width:55%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.phrase a:hover {
+
+    cursor:pointer;
+    color:#593c22;
+
+}
+
+#nav {
+
+    padding-top: 30px;
+    position: relative;
+    height:auto;
+    width:100%;
+    margin-left: 90px;
+
+}
+
+.nav a h3 {
+
+    font-size: 1.7vw;
+}
+
+.nav a:hover {
+
+    cursor:pointer;
+    color:#593c22;
+
+}
+
+.header {
+
+    height:auto;
+    width:100%;
+    overflow: hidden;
+    height:0px;  
+    display: grid;
+    place-items: center;
+    margin: 0;
+    overflow: visible;
+
+}
+
+#logo {
+
+    position: relative;
+    width: 550px;
+    aspect-ratio: 1000 / 556;
+    user-select: none;
+    overflow: visible;
+
+}
+
+#logo > img {
+
+    width: 100%;
+    height:150%;
+    position: absolute;
+
+}
+  
+
+p {
+
+    color:white;
+    font-size: 4vw;
+    margin: 0rem;
+    text-transform: uppercase;
+    font-family: 'Vina Sans', sans-serif;
+    -webkit-text-stroke: 2px black;
+
+}
+
+.artist-info {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#text {
+
+    position: relative;
+    margin-top: 30px;
+    width:65%;
+    margin-bottom: 50px;
+
+}
+
+.line {
+
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.fancy > .letter { 
+
+    display: inline-block;
+
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+
+    opacity:0.2;
+
+}
+
+.line a {
+
+    color:white;
+    font-size: 4vw;
+    margin: 0rem;
+    text-transform: uppercase;
+    font-family: 'Vina Sans', sans-serif;
+    -webkit-text-stroke: 2px black;
+    text-decoration: none;
+    
+}
+
+.fancy:hover > .letter:nth-child(1) {
+
+    transform: translate(0%, 20%) rotate(8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(2) {
+
+    transform: translate(0%, 40%) rotate(-7deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(3) {
+
+    transform: translate(0%, -20%) rotate(-7deg);  
+}
+
+.fancy:hover > .letter:nth-child(4) {
+
+    transform: translate(0, 40%) rotate(8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(5) {
+
+    transform: translate(0%, 10%) rotate(-4deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(6) {
+
+    transform: translate(0%, -15%) rotate(8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(7) {
+
+    transform: translate(0%, 45%) rotate(-17deg);
+
+}
+
+.fancy:hover > .letter:nth-child(8) {
+
+    transform: translate(0%, 24%) rotate(-8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(9) {
+
+    transform: translate(0%, 40%) rotate(3deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(10) {
+
+    transform: translate(0%, 0%) rotate(-4deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(11) {
+
+    transform: translate(0%, 0%) rotate(8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(12) {
+
+    transform: translate(0%, -20%) rotate(-8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(13) {
+
+    transform: translate(0%, -20%) rotate(-8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(14) {
+
+    transform: translate(0%, -40%) rotate(-8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(15) {
+
+    transform: translate(0%, 50%) rotate(-8deg);
+  
+}
+
+.navtitle {
+
+    height:150px;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size:3vw;
+    color:white;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: 'Vina Sans', sans-serif;
+    -webkit-text-stroke: 2px black;
+
+}
+
+
+nav {
+
+    display:flex;
+    flex-direction: column ;
+    padding-left:;
+    width:100%;
+    height:auto;
+    position: relative;
+
+}
+
+nav > a {
+
+    color: 	white;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 5vw;
+    font-weight: 300;
+    text-align: none;
+    position: relative;
+    text-decoration: none;
+    transition: 0.05s;
+    z-index: 101;
+    -webkit-text-stroke: 2px black;
+
+}
+
+nav > a:hover {
+
+    transition:0.3s ease-in-out;
+    font-size: 7vw;
+
+}
+
+nav > a > img {
+
+    width:25vw;
+    position:absolute;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition: transform 250ms, opacity 250ms;
+    pointer-events: none;
+
+}
+
+nav > a > span {
+
+    display:block;
+    cursor: none;
+    position:relative;
+    z-index: 2;
+    
+}
+
+nav > a:hover span {
+
+    color:white;
+    transition:0.05s;
+    z-index:101;
+
+}
+
+nav > a:hover > img {
+
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+    z-index: 100;
+
+}
+
+.shop {
+
+    height:500px;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+pre {
+
+    height:400px;
+    width:90%;
+    font-size: 3rem;
+    font-weight: bold;
+    color:red;
+    background: #8D1028;
+    border-radius: 1rem;
+    position: relative;
+    transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+}
+
+pre > * {
+    text-shadow: 0 0 0.3em currentColor;
+}
+
+pre::before,
+pre::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
+pre::before {
+    inset: 0.75rem;
+    border-radius: inherit;
+    background: black;
+    z-index: -1;
+    transform: translateZ(-50px);
+}
+
+pre::after {
+    z-index: -2;
+    background:red;
+    transform: translateZ(-50px);
+}
+
+
+
+
+    
+
+
+

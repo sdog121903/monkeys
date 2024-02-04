@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>MonkeysTribe</title>
+        
+        <link href="funkylogo.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <body>
+            <div class="container">
+              <div id="expand">
+
+
+
+              </div>
+            </div>
+          
+            <script>
+              function changeWidth() {
+                var scroll = (window.pageYOffset / 4.55);
+                var width = scroll;
+          
+                document.getElementById('expand').style.width = width + '%';
+              }
+          
+              window.addEventListener('scroll', function(){
+                requestAnimationFrame(changeWidth);
+              })
+            </script>
+          </body>
+
+        <script src="dancinglogo.js">
+
+
+        </script>
+
+    </body>
+
+</html>

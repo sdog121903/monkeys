@@ -1,0 +1,184 @@
+html, body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+
+}
+
+.navigation {
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+    font-weight: 421;
+    position:relative;
+
+}
+
+.carditems1 {
+
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:70px;
+    top:13px;
+    position: fixed; 
+    height:50px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.carditems1 a h1 {
+
+    cursor: pointer;
+
+
+}
+
+.carditems2 {
+
+    height:50px;
+    width:50px;
+    position:absolute;
+    right: 30px;
+    top:45px;
+    cursor: pointer;
+
+}
+
+.header-main {
+
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content:center ;
+    align-items:center;
+    overflow:hidden;
+    position:Relative;
+
+}
+
+.box {
+
+    width:100%;
+    font-size: 8.5vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: none; 
+    width: 100%; 
+    height: 100%;
+    margin-top: 5px;
+
+}
+.herolink1 {
+
+    cursor: pointer;
+    position: relative;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herolink1 video {
+
+    height:100%;
+    width:100%;
+    position: relative;
+
+}
+
+.image-overlay {
+
+    position: absolute;
+    top:0px;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+
+}
+
+.image-overlay:hover {
+
+    transition: 0.5s;
+    opacity:1;
+
+}
+
+.products {
+
+    height: auto;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .elem {
+    margin: 100px;
+    padding: 100px;
+    background-color: magenta;
+  }
+  
+  .to-fade-in {
+    opacity: 0;
+    &.fade-in {
+      animation: fade-in 3s forwards;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

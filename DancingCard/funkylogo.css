@@ -1,0 +1,28 @@
+body {
+  background: #2e3537;
+  margin: 0;
+  height: 100vh;
+  width:100%;
+}
+
+.container {
+
+  margin-top: 450px;
+  position: relative;
+
+}
+
+#expand {
+
+  background: url(Jimi1\ copy.jpeg);
+  background-size: contain;
+  min-width: 20%;
+  max-width: 100%;
+  min-height: 600px;
+  position: absolute;
+  will-change: width;
+
+}
+  
+
+

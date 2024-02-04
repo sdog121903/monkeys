@@ -1,0 +1,288 @@
+body {
+
+    background-color: #28282B;
+    height:100%;
+    padding-top: 7px;
+    box-sizing: border-box;
+
+}
+
+#logo {
+
+    height:100%;
+    width:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    aspect-ratio: 2/1;
+    user-select: none;
+    overflow: visible;
+
+}
+
+.header {
+
+    position:relative;
+    height:auto;
+    width:100%;
+    overflow: hidden;
+    height:300px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: visible;
+
+}
+
+#logo > img {
+
+    position:absolute;
+    width: 100%;
+    height:150%;
+
+}
+  
+
+p {
+
+    color:white;
+    font-size: 4vw;
+    margin: 0rem;
+    text-transform: uppercase;
+    font-family: 'Vina Sans', sans-serif;
+    -webkit-text-stroke: 2px black;
+
+}
+
+.artist-info {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#text {
+
+    position: relative;
+    width:100%;
+    height: 160px;
+    padding-top:35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.line {
+
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content:center;
+    align-items: center;
+    gap:420px;
+
+}
+
+.linebox {
+
+    width:20%;
+    height:auto;
+
+}
+
+.linebox:nth-of-type(1) {
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.linebox:nth-of-type(2) {
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+.fancy > .letter { 
+
+    display: inline-block;
+
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+
+    opacity:0.2;
+
+}
+
+.fancy:hover > .letter:nth-child(1) {
+
+    transform: translate(0%, 20%) rotate(8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(2) {
+
+    transform: translate(0%, 40%) rotate(-7deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(3) {
+
+    transform: translate(0%, -20%) rotate(-7deg);  
+}
+
+.fancy:hover > .letter:nth-child(4) {
+
+    transform: translate(0, 40%) rotate(8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(5) {
+
+    transform: translate(0%, 10%) rotate(-4deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(6) {
+
+    transform: translate(0%, -15%) rotate(8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(7) {
+
+    transform: translate(0%, 45%) rotate(-17deg);
+
+}
+
+.fancy:hover > .letter:nth-child(8) {
+
+    transform: translate(0%, 24%) rotate(-8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(9) {
+
+    transform: translate(0%, 40%) rotate(3deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(10) {
+
+    transform: translate(0%, 0%) rotate(-4deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(11) {
+
+    transform: translate(0%, 0%) rotate(8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(12) {
+
+    transform: translate(0%, -20%) rotate(-8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(13) {
+
+    transform: translate(0%, -20%) rotate(-8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(14) {
+
+    transform: translate(0%, -40%) rotate(-8deg);
+  
+}
+
+.fancy:hover > .letter:nth-child(15) {
+
+    transform: translate(0%, 50%) rotate(-8deg);
+  
+}
+
+.content {
+
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content-1 {
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+    width: 100%; 
+    height: 430px;
+
+}
+
+.image-1 {
+
+    height:100%;
+    width:33%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.image-1 img{
+
+    height:100%;
+    width:auto;
+    transition:2s;
+
+}
+
+.image-1 img:hover {
+
+    transform:scalex(-1);
+    transition:0.9s ease-in-out;
+    cursor:-webkit-grabbing;
+
+}
+
+.content-text {
+
+    height:100%;
+    width:66%;
+    padding:0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+}
+
+.content-text p {
+
+    font-size: 2.7vw;
+    text-align: center;
+
+}
+
+
+
+
+    
+
+
+

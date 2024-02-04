@@ -1,0 +1,174 @@
+[
+
+    {
+
+        "id":1,
+        "name":"Bergen Car Coat",
+        "price":565,
+        "image":"idproduct1.png"
+
+    },
+
+    {
+
+        "id":2,
+        "name":"Boxy Collared Overshirt",
+        "price":285,
+        "image":"idproduct2.png"
+
+    },
+
+    {
+
+        "id":3,
+        "name":"Woven Leather Tote",
+        "price":265,
+        "image":"idproduct3.png"
+
+    },
+
+    {
+
+        "id":4,
+        "name":"Tate Puffed Combo Blazer",
+        "price":515,
+        "image":"idproduct13.png"
+
+    },
+
+    {
+
+        "id":5,
+        "name":"Chantham Pant",
+        "price":85,
+        "image":"idproduct14.png"
+
+    },
+
+    {
+
+        "id":6,
+        "name":"Ornamental Script Tee",
+        "price":765,
+        "image":"idproduct15.png"
+
+    },
+
+    {
+
+        "id":7,
+        "name":"'47 Queens Franchise LS",
+        "price":"SOLDOUT",
+        "image":"idproduct16.png"
+
+    },
+
+    {
+
+        "id":8,
+        "name":"Women Wynn Convertible Monogram Puffer",
+        "price":235,
+        "image":"idproduct17.png"
+
+    },
+
+    {
+
+        "id":9,
+        "name":"Women Cardyn Monogram Wave Cami Dress",
+        "price":465,
+        "image":"idproduct18.png"
+
+    },
+
+    {
+
+        "id":10,
+        "name":"Women Amalia Autograph Monogram Silk Blouse",
+        "price":"SOLDOUT",
+        "image":"idproduct19.png"
+
+    },
+
+    {
+
+        "id":11,
+        "name":"Women Satin Mini Saddle Bag",
+        "price":55,
+        "image":"idproduct20.png"
+
+    },
+
+    {
+
+        "id":12,
+        "name":"Women Autograph Monogram Silk Bucket Hat",
+        "price":95,
+        "image":"idproduct5.png"
+
+    },
+
+    {
+
+        "id":13,
+        "name":"Women Mulberry III Monogram Wave Mesh Tee",
+        "price":115,
+        "image":"idproduct6.png"
+
+    },
+
+    {
+
+        "id":14,
+        "name":"Women Ida Autograph Monogram Silk Pant",
+        "price":215,
+        "image":"idproduct7.png"
+
+    },
+
+    {
+
+        "id":15,
+        "name":"Women Wave Monogram Deboss Leather Cylinder Pouch",
+        "price":100,
+        "image":"idproduct8.png"
+
+    },
+
+    {
+
+        "id":16,
+        "name":"Kids Faux Shearling Jacket",
+        "price":285,
+        "image":"idproduct9.png"
+
+    },
+
+    {
+
+        "id":17,
+        "name":"Kids Faux Shearling Jacket",
+        "price":285,
+        "image":"idproduct10.png"
+
+    },
+
+    {
+
+        "id":18,
+        "name":"Kids Convertible Turbo Midi Puffer",
+        "price":255,
+        "image":"idproduct11.png"
+
+    },
+
+    {
+
+        "id":19,
+        "name":"Kids Convertible Turbo Midi Puffer",
+        "price":255,
+        "image":"idproduct12.png"
+
+    }
+
+]

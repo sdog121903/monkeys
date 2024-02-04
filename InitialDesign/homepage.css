@@ -1,0 +1,536 @@
+html, body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+
+}
+
+.carditems1 {
+
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:70px;
+    top:13px;
+    position: fixed; 
+    height:50px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.carditems1 a h1 {
+
+    cursor: pointer;
+
+
+}
+
+.carditems2 {
+
+    height:50px;
+    width:50px;
+    position:absolute;
+    right: 15px;
+    top:36px;
+    cursor: pointer;
+
+}
+
+.header-main {
+
+    width: 100vw;
+    height: 37vh;
+    display: flex;
+    justify-content:center ;
+    align-items:center;
+    overflow:hidden;
+    position:Relative;
+    margin-top: 5vw;
+
+}
+
+.box {
+
+    width:100%;
+    font-size: 8.5vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: none; 
+    width: 100%; 
+    height: 100%;
+    margin-top: 5px;
+
+}
+.herolink1 {
+
+    cursor: pointer;
+    position: relative;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.herolink1 video {
+
+    height:100%;
+    width:100%;
+    position: relative;
+
+}
+
+.image-overlay {
+
+    position: absolute;
+    top:0px;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    overflow: hidden;
+
+}
+
+.image-overlay:hover {
+
+    transition: 0.5s;
+    opacity:1;
+
+}
+
+.products {
+
+    height: auto;
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.jack {
+
+    width: 100%;
+    height: 28vw;
+    margin:auto;
+    margin-top: 33px;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:15px;
+
+}
+
+.fade {
+
+    opacity: 0;
+
+}
+
+.item {
+
+    height:100%;
+    width:100%;
+    overflow:hidden;    
+    position:relative;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.caja1 {
+
+    height:85%;
+    width:100%;
+    overflow:hidden;
+
+}
+
+.image img {
+
+    object-fit: cover;
+    height:100%;
+    width:100%;
+
+}
+
+.caja2 {
+
+    height:15%;
+    width:100%;
+    overflow:hidden;
+
+}
+
+.caja2 p {
+
+    color:black;
+
+}
+
+h4 {
+
+    margin-top:0px;
+    margin-bottom: 0px;
+
+}
+
+h5 {
+
+    margin-top:0px;
+    margin-bottom: 0px;
+
+}
+
+h6 {
+
+    margin-top:0px;
+    margin-bottom: 0px;
+
+}
+
+h3 {
+
+    margin-top:0px;
+    margin-bottom: 0px;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+
+    cursor:pointer;
+
+}
+
+.soldout {
+
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:auto;
+    width:auto;
+    background-color: #000000;
+    color:white;
+    font-size:1.5vw;
+
+}
+
+.soldout p {
+
+    margin:5px 5px;
+
+}
+
+footer {
+
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+
+}
+
+.barrier {
+
+    height:100px;
+    width:100%;
+    background-color: #AEACAC;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.barrier h3 a {
+
+    cursor:pointer;
+
+}
+
+.header-main {
+
+    width:100%;
+
+}
+
+header {
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transition: transform 0.3s ease-in-out;
+    z-index: 9;
+    
+}
+
+header.hide {
+
+    transform: translateY(-150%);
+
+}
+
+header .logo {
+
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+
+header nav {
+
+    padding:0px;
+
+
+}
+
+header nav ul {
+
+    position:relative;
+    padding-top:30px;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 0px;
+
+}
+header nav ul li a {
+
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.2s;
+    font-size: 2.3vw;
+    padding:20px;
+}
+
+header nav ul li a:hover {
+
+    cursor:pointer;
+
+}
+
+.hover-image {
+
+    display: none;
+
+}
+
+.caja1:hover .original-image {
+
+    display: none;
+
+}
+
+.caja1:hover .hover-image {
+
+    display: flex;
+
+}
+
+.item:hover {
+
+    cursor:pointer;
+
+}
+
+.newtext {
+
+    display:none;
+
+}
+
+.caja2:hover .ogtext {
+
+    display:none;
+
+}
+
+.caja2:hover .newtext {
+
+    display:flex;
+    text-decoration: underline;
+
+}
+
+.item:hover .original-image {
+
+    display:none;
+
+}
+
+.item:hover .hover-image {
+
+    display:flex;
+
+}
+
+.flexsize {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.modal {
+
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(0%, -50%) scale(0);
+    border: 1px solid black;
+    z-index:10;
+    background-color:#FFFFFF;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.modal.active {
+
+    transform: translate(100%, -50%) scale(1);
+
+
+}
+
+.modal1 {
+
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:auto;
+    border-bottom: #AEACAC 1px solid;
+
+}
+
+.modal1 h1 {
+
+    height:auto;
+    width:75%;
+    text-align: center;
+
+}
+
+.close-button {
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:25%;
+
+}
+
+.close-button img {
+
+    height:36%;
+    width:36%;
+
+}
+
+.modal2 .item .image img {
+
+    width:100%;
+
+}
+
+.spec {
+
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap:10px;
+    text-align: center;
+    align-items: center;
+    border-bottom:black solid 1px;
+
+}
+
+.quantity span {
+
+    display:inline-block;
+    width:25px;
+    height:25px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 50%;
+    cursor:pointer;
+
+}
+
+.quantity span:nth-of-type(2) {
+
+    background-color: transparent;
+    color:#000;
+
+}
+
+.listcart {
+
+    overflow:auto;
+
+}
+
+.listcart::-webkit-scrollbar {
+
+    width:0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

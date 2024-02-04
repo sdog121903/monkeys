@@ -1,0 +1,164 @@
+html, body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+
+}
+
+.carditems1 {
+
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:70px;
+    top:13px;
+    position: fixed; 
+    height:50px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.carditems1 a h1 {
+
+    cursor: pointer;
+
+
+}
+
+.carditems2 {
+
+    height:50px;
+    width:50px;
+    position:absolute;
+    right: 15px;
+    top:36px;
+    cursor: pointer;
+
+}
+
+.header-main {
+
+    width: 100vw;
+    height: 37vh;
+    display: flex;
+    justify-content:center ;
+    align-items:center;
+    overflow:hidden;
+    position:Relative;
+    margin-top: 5vw;
+
+}
+
+.box {
+
+    width:100%;
+    font-size: 8.5vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer {
+
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+
+}
+
+.barrier {
+
+    height:100px;
+    width:100%;
+    background-color: #AEACAC;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.barrier h3 a {
+
+    cursor:pointer;
+
+}
+
+header {
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+    
+}
+
+header.hide {
+
+    transform: translateY(-150%);
+
+}
+
+header .logo {
+
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+
+header nav {
+
+    padding:0px;
+
+
+}
+
+header nav ul {
+
+    position:relative;
+    padding-top:30px;
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 0px;
+
+}
+header nav ul li a {
+
+    display: inline-block;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.2s;
+    font-size: 2.3vw;
+    padding:20px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+
+    cursor:pointer;
+
+}
